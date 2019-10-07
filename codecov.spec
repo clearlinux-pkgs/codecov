@@ -4,7 +4,7 @@
 #
 Name     : codecov
 Version  : 2.0.15
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/77/f2/9790ee0f04eb0571841aff5ba1709c7869e82aa2145a04a3d4770807ff50/codecov-2.0.15.tar.gz
 Source0  : https://files.pythonhosted.org/packages/77/f2/9790ee0f04eb0571841aff5ba1709c7869e82aa2145a04a3d4770807ff50/codecov-2.0.15.tar.gz
 Summary  : Hosted coverage reports for Github, Bitbucket and Gitlab
@@ -13,10 +13,8 @@ License  : Apache-2.0
 Requires: codecov-bin = %{version}-%{release}
 Requires: codecov-python = %{version}-%{release}
 Requires: codecov-python3 = %{version}-%{release}
-Requires: argparse
 Requires: coverage
 Requires: requests
-BuildRequires : argparse
 BuildRequires : buildreq-distutils3
 BuildRequires : coverage
 BuildRequires : requests
@@ -60,12 +58,21 @@ python3 components for the codecov package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1550931686
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1570481316
+export GCC_IGNORE_WERROR=1
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
+export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
