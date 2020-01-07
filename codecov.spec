@@ -4,7 +4,7 @@
 #
 Name     : codecov
 Version  : 2.0.15
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/77/f2/9790ee0f04eb0571841aff5ba1709c7869e82aa2145a04a3d4770807ff50/codecov-2.0.15.tar.gz
 Source0  : https://files.pythonhosted.org/packages/77/f2/9790ee0f04eb0571841aff5ba1709c7869e82aa2145a04a3d4770807ff50/codecov-2.0.15.tar.gz
 Summary  : Hosted coverage reports for Github, Bitbucket and Gitlab
