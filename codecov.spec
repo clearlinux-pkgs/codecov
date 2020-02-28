@@ -4,7 +4,7 @@
 #
 Name     : codecov
 Version  : 2.0.16
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/4b/15/f430d86e0a2e175fba664dcbb7d952b4a9916c69187add93a5a7f2e039c7/codecov-2.0.16.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4b/15/f430d86e0a2e175fba664dcbb7d952b4a9916c69187add93a5a7f2e039c7/codecov-2.0.16.tar.gz
 Summary  : Hosted coverage reports for GitHub, Bitbucket and Gitlab
@@ -46,6 +46,7 @@ python components for the codecov package.
 Summary: python3 components for the codecov package.
 Group: Default
 Requires: python3-core
+Provides: pypi(codecov)
 
 %description python3
 python3 components for the codecov package.
@@ -60,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582585947
+export SOURCE_DATE_EPOCH=1582908494
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
