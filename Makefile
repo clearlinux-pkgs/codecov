@@ -1,5 +1,5 @@
 PKG_NAME := codecov
-URL = https://files.pythonhosted.org/packages/4b/33/9934a99571b48973d6e70e36587b8af1a27ac215269c47d88073337c029f/codecov-2.1.3.tar.gz
+URL = https://files.pythonhosted.org/packages/6f/c2/199c0f56df63c169925b5d0f2fd09b6e9fc0043a045ce3b0d998b01e8df7/codecov-2.1.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
