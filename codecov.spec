@@ -4,7 +4,7 @@
 #
 Name     : codecov
 Version  : 2.1.9
-Release  : 32
+Release  : 33
 URL      : https://files.pythonhosted.org/packages/68/27/28aaa27789fec468684132e18222f3e58013b18473de1e6d776aff1662a2/codecov-2.1.9.tar.gz
 Source0  : https://files.pythonhosted.org/packages/68/27/28aaa27789fec468684132e18222f3e58013b18473de1e6d776aff1662a2/codecov-2.1.9.tar.gz
 Summary  : Hosted coverage reports for GitHub, Bitbucket and Gitlab
@@ -76,15 +76,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1598281102
+export SOURCE_DATE_EPOCH=1635711917
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
